@@ -1,5 +1,5 @@
-// src/pages/Company.jsx
-import React, { useState } from "react";
+import React, { useState,Link } from "react";
+
 
 const translations = {
   en: {
@@ -207,14 +207,16 @@ const Company = () => {
   const t = translations[lang];
 
   return (
+    
     <div className="d-flex flex-column min-vh-100">
+      
       {/* NAVBAR */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <a className="navbar-brand fw-bold" href="#home">
             {t.brand}
           </a>
-
+          
           <button
             className="navbar-toggler"
             type="button"
@@ -408,6 +410,7 @@ const Company = () => {
       <footer className="bg-dark text-light text-center py-3 mt-auto">
         <div className="container small">{t.footerText}</div>
       </footer>
+      
     </div>
   );
 };
